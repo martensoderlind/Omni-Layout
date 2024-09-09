@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            border: 1px solid black;
+            position: relative;
+            height: 5000px;
+        }
+        div{
+            background-color: cadetblue;
+            width: 100px;
+            height: 50px;
+            margin: 10px;
+            padding: 4px;
+            border: 1px solid black;
+        }
+        .relativP{
+            position: relative;
+            top: -100px;
+            left: 900px;
+        }
+        .fixedP{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+        .absolutP {
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .stickyP{
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div></div>
+        <div class="relativP">Content 2</div>
+        <div class="fixedP">Content 3</div>
+        <div class="absolutP">cont 4</div>
+        <div class="stickyP">cont 5</divclass>
+    </main>
+</body>
+</html>
